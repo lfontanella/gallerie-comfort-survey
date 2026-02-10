@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Comfort Monitoring – Gallerie dell’Accademia di Venezia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #f6f2ea;
+      --text: #3b3b3b;
+      --muted: #5a5a5a;
+      --green: #6e9371;
+      --green2:#58815c;
+      --card: rgba(255,255,255,0.55);
+      --border: rgba(59,59,59,0.18);
+      --shadow: 0 10px 30px rgba(0,0,0,0.10);
+      --radius: 28px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background: radial-gradient(circle at 30% 0%, #fff 0%, var(--bg) 55%, #efe9dd 100%);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 18px;
+    }
+
+    .screen{
+      width: min(430px, 100%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.35));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px 18px 18px;
+      text-align:center;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+    .brand img{
+      width: 58px;
+      height:auto;
+      display:block;
+    }
+    .brand .name{
+      font-size: 20px;
+      font-weight:600;
+      line-height:1.05;
+      text-align:left;
+    }
+
+    h1{
+      font-size: 22px;
+      margin: 16px 6px 8px;
+      font-weight:600;
+      line-height:1.25;
+    }
+    .subtitle{
+      margin: 0 18px 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height:1.35;
+    }
+
+    .btn{
+      display:block;
+      width: 100%;
+      border:0;
+      border-radius: 999px;
+      padding: 16px 18px;
+      background: var(--green);
+      color:#fff;
+      font-size: 18px;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      transition: transform .12s ease, background .12s ease;
+      text-decoration:none;
+    }
+    .btn:active{ transform: scale(0.99); }
+    .btn:hover{ background: var(--green2); }
+
+    .qr{
+      margin-top: 16px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:8px;
+      opacity: 0.95;
+    }
+    .qr img{ width: 88px; height:auto; border-radius: 10px; }
+    .qr small{ color: var(--muted); font-size: 12px; }
+
+    footer{
+      margin-top: 18px;
+      color: #6b6b6b;
+      font-size: 12px;
+      line-height:1.25;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="screen" role="application" aria-label="Comfort Monitoring">
+    <div class="brand">
+      <img src="logo.png" alt="Gallerie dell'Accademia di Venezia logo">
+      <div class="name">Gallerie<br>Accademia, Venezia</div>
+    </div>
+
+    <h1>Comfort Monitoring –<br>Gallerie dell’Accademia di Venezia</h1>
+    <p class="subtitle">Visitor feedback for environmental quality and well-being</p>
+
+    <a class="btn" href="survey.html">Start Survey</a>
+
+    <div class="qr">
+      <img src="qr.png" alt="QR code">
+      <small>Scan to open survey</small>
+    </div>
+
+    <footer>
+      Prototype of the digital comfort survey interface – Gallerie dell’Accademia di Venezia (2025)
+    </footer>
+  </div>
+</body>
+</html>
