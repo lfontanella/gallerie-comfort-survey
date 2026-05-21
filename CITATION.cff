@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+title: "Gallerie Comfort Survey"
+message: "If you use this repository, please cite it as below."
+type: software
+
+authors:
+  - family-names: Fontanella
+    given-names: Luca
+    email: luca.fontanella@gmail.com
+    affiliation: "Università Iuav di Venezia"
+
+repository-code: "https://github.com/lfontanella/gallerie-comfort-survey"
+
+abstract: >
+  Prototype workflow for visitor comfort feedback and maintenance reporting
+  in a BIM/HBIM facility management context. The repository documents a
+  mobile-oriented survey interface, Google Forms-based feedback collection,
+  maintenance reporting workflows and model-based visualization scenarios
+  developed as part of a PhD research project on BIM, HBIM, openBIM, IoT and
+  facility management in heritage contexts.
+
+keywords:
+  - HBIM
+  - BIM
+  - openBIM
+  - facility management
+  - visitor feedback
+  - comfort survey
+  - maintenance reporting
+  - Google Forms
+  - Google Sheets
+  - Blender
+  - Bonsai
+  - heritage buildings
+  - museum
+  - digital twin
+
+license: MIT
+version: "1.0.0"
+date-released: "2026-05-20"
+
+preferred-citation:
+  type: thesis
+  title: "Utilizzo della metodologia BIM (Building Information Modeling) e degli standard openBIM per le analisi e il monitoraggio delle prestazioni termiche di edifici storici"
+  authors:
+    - family-names: Fontanella
+      given-names: Luca
+  institution:
+    name: "Università Iuav di Venezia"
+  year: 2026
